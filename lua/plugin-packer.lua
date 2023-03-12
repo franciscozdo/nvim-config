@@ -5,6 +5,8 @@ function startup_fun()
 
     use 'ethanholz/nvim-lastplace'
 
+    use 'ms-jpq/coq_nvim'
+
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
