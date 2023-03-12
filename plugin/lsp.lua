@@ -27,11 +27,4 @@ local setup_opts = { on_attach = on_attach }
 require("lspconfig").clangd.setup(setup_opts)
 require("lspconfig").pyright.setup(setup_opts)
 require("lspconfig").ltex.setup(setup_opts)
-
-require("lspconfig").lua_ls.setup({
-    on_attach = on_attach,
-    diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
-    },
-})
+require("lspconfig").lua_ls.setup(setup_opts)

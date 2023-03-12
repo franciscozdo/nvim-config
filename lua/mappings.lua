@@ -1,4 +1,4 @@
-options = { noremap = true }
+local options = { noremap = true }
 
 -- Split resizing mappings
 vim.keymap.set('n', '=', ':vertical resize +5<CR>', options)

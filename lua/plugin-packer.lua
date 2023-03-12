@@ -1,4 +1,4 @@
-function startup_fun()
+local function startup_fun(use)
     use 'wbthomason/packer.nvim'
 
     use 'morhetz/gruvbox'

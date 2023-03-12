@@ -1,6 +1,6 @@
 vim.o.showmode = false
 
-require('lualine').setup {
+local lualine_options = {
   options = {
     icons_enabled = true,
     theme = 'gruvbox',
@@ -38,3 +38,5 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
+require('lualine').setup(lualine_options)
