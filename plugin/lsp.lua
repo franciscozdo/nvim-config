@@ -24,7 +24,11 @@ end
 
 local setup_opts = { on_attach = on_attach }
 
-require("lspconfig").clangd.setup(setup_opts)
-require("lspconfig").pyright.setup(setup_opts)
-require("lspconfig").ltex.setup(setup_opts)
-require("lspconfig").lua_ls.setup(setup_opts)
+-- NOTE:
+--   * each lsp must be installed (e.g. using Mason)
+--   * enable lsp that will be used
+
+-- require("lspconfig").clangd.setup(setup_opts)
+-- require("lspconfig").pyright.setup(setup_opts)
+-- require("lspconfig").ltex.setup(setup_opts)
+-- require("lspconfig").lua_ls.setup(setup_opts)

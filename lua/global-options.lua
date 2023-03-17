@@ -41,7 +41,7 @@ vim.o.exrc = true
 vim.o.updatetime = 100
 vim.o.undofile = true
 vim.o.history = 50
-vim.o.undodir = "/home/paco/.nvim/undodir"
+vim.o.undodir = vim.env.HOME .. "/.nvim/undodir"
 vim.o.swapfile = false
 vim.o.backup = false
 

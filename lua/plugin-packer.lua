@@ -5,7 +5,18 @@ local function startup_fun(use)
 
     use 'ethanholz/nvim-lastplace'
 
-    use 'ms-jpq/coq_nvim'
+    use 'lewis6991/gitsigns.nvim'
+
+    use 'ray-x/lsp_signature.nvim'
+
+    use  {
+        'ms-jpq/coq_nvim',
+        branch = 'coq'
+    }
+    use  {
+        'ms-jpq/coq.artifacts',
+        branch = 'artifacts'
+    }
 
     use {
         "williamboman/mason.nvim",
@@ -21,11 +32,6 @@ local function startup_fun(use)
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-
-    use {
-        'tanvirtin/vgit.nvim',
-        requires = { 'nvim-lua/plenary.nvim' }
     }
 
     use {

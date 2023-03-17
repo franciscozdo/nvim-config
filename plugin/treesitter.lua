@@ -1,6 +1,7 @@
 local treesitter_options = {
     ensure_installed = {
         "c",
+        "cpp",
         "lua",
         "vim",
         "help",
