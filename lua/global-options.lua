@@ -4,17 +4,17 @@ vim.o.cursorline = true
 vim.o.colorcolumn = "100"
 vim.o.list = true
 vim.opt.listchars = {
-    tab = "▸ ",
-    trail = '·',
+  tab = "▸ ",
+  trail = '·',
 }
 
 -- Spelling
 vim.o.spelllang = "en"
 
 -- Indentation
-vim.o.tabstop = 4
+vim.o.tabstop = 2
 vim.o.softtabstop = 0
-vim.o.shiftwidth = 4
+vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.smartindent = true
 

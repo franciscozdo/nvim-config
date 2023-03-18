@@ -11,8 +11,8 @@ vim.keymap.set('n', '<leader>m', ':tabp<CR> ', options)
 
 -- Toggle spelling
 local function toggle_spell_check()
-    vim.o.spell = not vim.o.spell
-    print("spell: " .. tostring(vim.o.spell))
+  vim.o.spell = not vim.o.spell
+  print("spell: " .. tostring(vim.o.spell))
 end
 vim.keymap.set('n', '<leader>s', toggle_spell_check, options)
 
