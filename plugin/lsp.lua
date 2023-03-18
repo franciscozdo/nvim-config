@@ -32,3 +32,13 @@ local setup_opts = { on_attach = on_attach }
 -- require("lspconfig").pyright.setup(setup_opts)
 -- require("lspconfig").ltex.setup(setup_opts)
 -- require("lspconfig").lua_ls.setup(setup_opts)
+
+local signature_opts = {
+    bind = true,
+    floating_window = false,
+    hint_enable = true,
+    hint_prefix = "󰛨 ",
+    toggle_key = '<M-s>',
+}
+
+require('lsp_signature').setup(signature_opts)
