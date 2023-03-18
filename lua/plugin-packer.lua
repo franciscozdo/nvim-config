@@ -1,13 +1,15 @@
 local function startup_fun(use)
     use 'wbthomason/packer.nvim'
 
-    use 'morhetz/gruvbox'
+    use 'ellisonleao/gruvbox.nvim'
 
     use 'ethanholz/nvim-lastplace'
 
     use 'lewis6991/gitsigns.nvim'
 
     use 'ray-x/lsp_signature.nvim'
+
+    use 'nmac427/guess-indent.nvim'
 
     use  {
         'ms-jpq/coq_nvim',
