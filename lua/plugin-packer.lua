@@ -11,6 +11,10 @@ local function startup_fun(use)
 
   use 'nmac427/guess-indent.nvim'
 
+  use 'simrat39/rust-tools.nvim'
+
+  -- use 'p00f/clangd_extensions.nvim'
+
   use  {
     'ms-jpq/coq_nvim',
     branch = 'coq'
