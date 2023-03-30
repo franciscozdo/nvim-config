@@ -34,8 +34,6 @@ local settings = {
     map('n', '<C-k>', gs.prev_hunk)
     map('n', '<C-j>', gs.next_hunk)
     map('n', 'gp'   , gs.preview_hunk)
-    map('n', 'gb'   , gs.blame_line)
-    map('n', 'gB'   , function() gs.blame_line{full=true} end)
   end
 }
 
