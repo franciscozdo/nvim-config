@@ -20,6 +20,16 @@ local on_attach = function(ev)
   vim.keymap.set('n', 'gw',  vim.diagnostic.open_float,   opts)
   vim.keymap.set('n', 'g]',  vim.diagnostic.goto_next,  opts)
   vim.keymap.set('n', 'g[',  vim.diagnostic.goto_prev,  opts)
+
+  local function toggle_diagnostics()
+    if vim.diagnostic.is_disabled() then
+      vim.diagnostic.enable()
+    else
+      vim.diagnostic.disable()
+    end
+  end
+  vim.keymap.set('n', '<leader>tt', toggle_diagnostics, {noremap = true, silent = true})
+
 end
 
 vim.api.nvim_create_autocmd('LspAttach', {
