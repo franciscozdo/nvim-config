@@ -13,7 +13,7 @@ local function startup_fun(use)
 
   use 'simrat39/rust-tools.nvim'
 
-  -- use 'p00f/clangd_extensions.nvim'
+  use 'p00f/clangd_extensions.nvim'
 
   use  {
     'ms-jpq/coq_nvim',

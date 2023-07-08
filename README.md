@@ -6,7 +6,7 @@
   ```
   git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
   ```
-4. Open nvim.
+4. Open nvim and run `:PackerUpdate` twice.
 5. Run:
   ```
   :COQdeps
